@@ -26,8 +26,7 @@
     <div class="header" id="header">
         <h1 class="title" id="title">
             All in One Unit Converter
-            <a href="#" onclick="change();" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();"><i
-                    class="fa fa-adjust"></i></a>
+            <a href="#" onclick="change();"><i class="fa fa-adjust"></i></a>
         </h1>
     </div>
 
@@ -37,8 +36,7 @@
                 What to convert
             </legend>
 
-            <select id="categories" onchange="displayFromSection()" onmouseover="mouseOverFunction();"
-                onmouseout="mouseOutFunction();">
+            <select id="categories" onchange="displayFromSection()">
                 <option value="default" selected disabled hidden id="changeTextForSmallScreen">Choose a measurement
                     category to convert</option>
                 <option value="Area">Area</option>
@@ -62,10 +60,8 @@
             </legend>
 
             <input id="fromInput" type="number" min="0" placeholder="Enter a value"
-                onkeyup="validity.valid||(value='');displayToSection();" onmouseover="mouseOverFunction();"
-                onmouseout="mouseOutFunction();">
-            <select id="fromSelect" onchange="displayToSection()" onmouseover="mouseOverFunction();"
-                onmouseout="mouseOutFunction();">
+                onkeyup="validity.valid||(value='');displayToSection();">
+            <select id="fromSelect" onchange="displayToSection()">
                 <option value="default" selected disabled hidden>Choose a unit</option>
             </select>
 
@@ -81,8 +77,7 @@
                 To
             </legend>
 
-            <select id="toSelect" onchange="displayAnswer()" onmouseover="mouseOverFunction();"
-                onmouseout="mouseOutFunction();">
+            <select id="toSelect" onchange="displayAnswer()">
                 <option value="default" disabled hidden>Choose a unit</option>
             </select>
             <p id="answer">
