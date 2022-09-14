@@ -1,2 +1,3 @@
 # old-projects
-Old projects - unit converter, quizly and rock paper scissors
+Old projects - Unit Converter, Quizly and Rock-Paper-Scissors.  
+You can access them here: [https://bhushan-srivastava.github.io/old-projects/](https://bhushan-srivastava.github.io/old-projects/)
