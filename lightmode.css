@@ -138,18 +138,7 @@ font-size: 1000%;
   color: #EFE1CE;
   border: solid 2px #373024;
 }
-#cursors {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 10px;
-  height: 10px;
-  background-color: #111;
-  border-radius: 50%;
-  z-index: 10000;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
+
 
 
 /* small-size screen */
@@ -186,9 +175,7 @@ font-size: 1000%;
 #resources{
 display: none;
   }
-  #cursors {
-    display: none;
-  }
+
 }
 /* small-size screen */
 @media screen and (max-height: 446px) {
@@ -224,7 +211,5 @@ display: none;
   #resources{
 display: none;
   }
-  #cursors {
-    display: none;
-  }
+
 }

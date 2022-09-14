@@ -70,18 +70,7 @@ background-color: #666769;
 #answer{
   display: none;
 }
-#cursors {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  z-index: 10000;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
+
 p{
   padding: 0 1em 0 1em;
 }
@@ -105,9 +94,7 @@ p{
   fieldset{
     padding: 2em;
   }
-  #cursors {
-    display: none;
-  }
+
 }
 /* small-size screen */
 @media screen and (max-height: 446px) {
@@ -120,7 +107,5 @@ p{
   fieldset{
     padding: 2em;
   }
-  #cursors {
-    display: none;
-  }
+
 }

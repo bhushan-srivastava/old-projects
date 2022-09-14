@@ -61,27 +61,14 @@ img {
 img:hover {
     box-shadow: 5px 10px 18px rgb(245, 74, 67);
 }
-#cursors {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 10px;
-  height: 10px;
-  background-color: #111;
-  border-radius: 50%;
-  z-index: 10000;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
+
 
 /* small-size screen */
 @media screen and (max-width: 1009px)  {
   #userSection {
     box-shadow: none;
   }
-  #cursors {
-    display: none;
-  }
+
   
   #options {
       display: flex;
@@ -97,9 +84,7 @@ img:hover {
   #userSection {
     box-shadow: none;
   }
-  #cursors {
-    display: none;
-  }
+
   
   #options {
       display: flex;
