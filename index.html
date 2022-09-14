@@ -1,0 +1,374 @@
+---
+layout: null
+title: Bhushan Srivastava
+description: Tech aficionado, arts and crafts buff, avid reader.
+image: favicon.png
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% seo %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="author" content="Bhushan Srivastava">
+    <meta property="og:type" content="portfolio website programming project">
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" id="myStyleSheet" href="lightmode.css">
+    <!-- Font by Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+    </style>
+    <!-- Website Icon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Bhushan Srivastava</title>
+    <!-- Icons by Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Top navigation -->
+    <div class="topNavigation">
+        <!-- links -->
+        <button onclick="homeFunction();" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">Bhushan</button>
+        <button onclick="window.location.assign('#draftFromResume');" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">Education</button>
+        <button onclick="window.location.assign('#project');" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">Projects</button>
+        <button onclick="window.location.assign('#contact');" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">Contact</button>
+    </div>
+
+    <span class="buttons">
+        <button onclick="slideLeft();" id="leftButton" title="Slide left" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">&#8592;</button>
+        <button onclick="homeFunction();" id="homeButton" title="Go to home" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">&#127968;</button>
+        <button onclick="slideRight();" id="rightButton" title="Slide right" onmouseover="mouseOverFunction();"
+            onmouseout="mouseOutFunction();">&#8594;</button>
+    </span>
+
+
+
+
+    <main class="main">
+        <section>
+            <h1>
+                Hi, I'm Bhushan!
+            </h1>
+            <br>
+            <p>
+                Tech aficionado, arts and crafts buff, avid reader.
+            </p>
+            <p id="pleaseScroll">
+                Please tap right or left side of the screen to scroll
+            </p>
+            <div class="social" id="social">
+                <!-- icons by Font Awesome -->
+                <a href="https://www.linkedin.com/in/bhushan-it/" onmouseover="mouseOverFunction();"
+                    onmouseout="mouseOutFunction();"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/bhushan-it" onmouseover="mouseOverFunction();"
+                    onmouseout="mouseOutFunction();"><i class="fa fa-github"></i></a>
+                <a href="#" onclick="change();" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();"><i
+                        class="fa fa-adjust"></i></a>
+
+            </div>
+        </section>
+        <section id="home">
+            <h1 id="laptopEmoji">
+                &#128187;
+            </h1>
+            <p>
+                Please scroll
+                <!--&#8594;-->
+            </p>
+        </section>
+        <section id="draftFromResume">
+            <h1>A draft from my resume</h1>
+        </section>
+        <section id="rightArrowEmojiSection">
+            <h1 id="rightArrowEmoji">&#8594;</h1>
+        </section>
+        <section>
+            <h1>January, 2022</h1>
+            <p>
+
+                Semester 3, second year B.Sc IT, 10 cgpa.
+
+            </p>
+        </section>
+        <section>
+            <h1>
+                Relevant coursework
+            </h1>
+            <p>
+            <ul>
+                <li>
+                    Learnt about programming using the Python language.
+                </li>
+                <li>
+                    Learnt about database management systems and more about SQL using Oracle Live SQL.
+                </li>
+                <li>
+                    Learnt about data structures.
+                </li>
+                <li>
+                    Enhanced my programming skills to gain proficiency.
+                </li>
+                <li>
+                    Made fun projects to learn more about web development.
+                </li>
+            </ul>
+            <a href="#project" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">What are the projects
+                about. </a>
+            </p>
+
+        </section>
+        <section>
+            <h1>June, 2021</h1>
+            <p>
+
+                Semester 2, first year B.Sc IT, 10 cgpa.
+
+            </p>
+        </section>
+        <section>
+            <h1>
+                Relevant coursework
+            </h1>
+            <p>
+            <ul>
+                <li>
+                    Learnt about object oriented programming using the C language.
+                </li>
+                <li>
+                    Enhanced my analytical skills to gain proficiency.
+                </li>
+                <li>
+                    Learnt about basics of web development with HTML, CSS, JavaScript, PHP with MySQLi
+                    extensions for the MySQL database.
+                </li>
+                <li>
+                    Started making fun projects using these skills and a github account.
+                </li>
+            </ul>
+            <a href="#project" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">What are the projects
+                about. </a>
+            </p>
+
+        </section>
+        <section>
+            <h1>April, 2021</h1>
+            <p>
+                Semester 1, first year, B.Sc IT, 9.8 cgpa.
+            </p>
+        </section>
+        <section>
+            <h1>
+                Relevant coursework
+            </h1>
+            <p>
+            <ul>
+                <li>
+                    Learnt about procedure oriented programming using the C language.
+                </li>
+                <li>
+                    Began developing analytical skills.
+                </li>
+                <li>
+                    Learnt about operating systems and began working on the Linux operating system which
+                    helped me to work with terminals.
+                </li>
+                <li>
+                    Learned about version control systems.
+                </li>
+            </ul>
+            </p>
+        </section>
+        <section>
+            <h1>July, 2020</h1>
+            <p>
+                High school, 12th grade ISC, 88% aggregate and 93% in computer science, from
+                Singhania School, Mumbai, India.
+            </p>
+            <h1>May, 2018</h1>
+            <p>
+                10th grade ICSE, 92% aggregate Singhania School, Mumbai, India.
+
+            </p>
+        </section>
+        <section>
+            <h1>
+                Relevant coursework
+            </h1>
+            <p>
+            <ul>
+                <li>
+                    Gained proficiency in object oriented programming using the Java language.
+                </li>
+                <li>
+                    Developed a knack for problem solving.
+                </li>
+                <li>
+                    Became decisive in choosing the best approach for problems.
+                </li>
+            </ul>
+            </p>
+
+        </section>
+
+        <section>
+            <h1>Projects</h1>
+            <p>
+                You can checkout my
+                projects.
+            </p>
+        </section>
+        <section id="project">
+            <h1>
+                Quizly
+            </h1>
+            <br>
+            <br>
+            <img src="quizly.png" alt="quizly" id="quizlyPicture">
+            <p>
+            <ul>
+                <li>
+                    Quizly is a quiz website.
+                </li>
+                <li>
+                    It has 4 levels of quizzes.
+                </li>
+                <li>
+                    Learnt a lot about HTML CSS JavaScript and Tailwind CSS by doing this project.
+                </li>
+                <li>
+                    This project is a work in progress as I’m making changes to it.
+                </li>
+            </ul>
+            <a href="quizly" id="project" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">You can
+                checkout Quizly here. </a>
+            </p>
+        </section>
+        <section>
+            <h1>
+                All in One Unit Converter
+            </h1>
+            <br>
+            <br>
+            <img src="all in one unit converter.png" alt="all in one unit converter" id="allInOneUnitConverterPicture">
+            <p>
+            <ul>
+                <li>
+                    All in One Unit Converter is a powerful unit conversion tool.
+                </li>
+                <li>
+                    It has 8 categories of measurements and a total of 64 units.
+                </li>
+                <li>
+                    Learnt a lot about HTML CSS JavaScript by doing this project.
+                </li>
+                <li>
+                    This project is a work in progress as I’m making changes to it.
+                </li>
+            </ul>
+            <a href="all-in-one-unit-converter" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">You
+                can checkout All in One Unit Converter here. </a>
+            </p>
+        </section>
+        <section>
+            <h1>
+                Rock Paper Scissors
+            </h1>
+            <br>
+            <br>
+            <img src="rock paper scissors.png" alt="rock paper scissors" id="rockPaperScissorsPicture">
+            <p>
+            <ul>
+                <li>
+                    The classic game of rock paper scissors.
+                </li>
+                <li>
+                    Play against the computer.
+                </li>
+                <li>
+                    Learnt a lot about HTML CSS JavaScript by doing this project.
+                </li>
+                <li>
+                    This project is a work in progress as I’m making changes to it.
+                </li>
+            </ul>
+            <a href="rock-paper-scissors" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">You
+                can checkout Rock Paper Scissors here. </a>
+            </p>
+        </section>
+        <!-- <section>
+            <h1>
+                Contact
+            </h1>
+        </section> -->
+        <section id="contact">
+            <h1>
+                Contact
+            </h1>
+            <p>
+                If you want, you can send a message to me and I'll get back to you when I can.
+            </p>
+            <div class="social" id="social">
+                <!-- icons by Font Awesome -->
+                <a href="https://www.linkedin.com/in/bhushan-it/" onmouseover="mouseOverFunction();"
+                    onmouseout="mouseOutFunction();"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/bhushan-it" onmouseover="mouseOverFunction();"
+                    onmouseout="mouseOutFunction();"><i class="fa fa-github"></i></a>
+            </div>
+        </section>
+        <section id="resources">
+            <h1>
+                Resources Used
+            </h1>
+        </section>
+        <section>
+            <h1>
+                Resources Used
+
+            </h1>
+            <p>
+            <p>Icons by Font Awesome:</p>
+
+            Font Awesome by Dave Gandy - <a href="http://fontawesome.io" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">http://fontawesome.io</a>
+            <br>
+            License:
+            <a href="https://fontawesome.com/license/free" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">https://fontawesome.com/license/free</a>
+            <br>
+            <br>
+            <p>Font by Google Fonts:</p>
+
+            Font by Google Fonts: <a href="https://fonts.google.com/" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">https://fonts.google.com/</a>
+            <br>
+            Attribution: <a href="https://fonts.google.com/attribution" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">https://fonts.google.com/attribution</a>
+            </p>
+
+        </section>
+
+        <div id="cursors">
+        </div>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

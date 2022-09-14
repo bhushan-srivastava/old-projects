@@ -1,0 +1,117 @@
+---
+layout: null
+title: Rock Paper Scissors
+description: The classic game of rock paper scissors.
+image: favicon.png
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% seo %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" id="myStyleSheet" href="lightmode.css">
+    <!-- Font by Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+    </style>
+    <!-- Website Icon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Rock Paper Scissors</title>
+    <!-- Icons by Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>
+            Rock Paper Scissors
+
+            <a href="#" onclick="change();" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">
+                <i class="fa fa-adjust"></i></a>
+
+        </h1>
+
+    </div>
+
+    <main>
+        <section id="userSection">
+
+            <div id="currentInput">
+
+                <fieldset>
+
+                    <p>
+                        Your selected input
+                    </p>
+                    <img src="" alt="" id="currentUserInputImage">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <p>
+                        Computer's selected input
+                    </p>
+                    <img src="" alt="" id="currentComputerInputImage">
+
+                </fieldset>
+
+            </div>
+
+            <p id="score">
+                Score:
+                <br>
+                User: Computer:
+            </p>
+
+            <div id="options">
+                <p>
+                    Your options
+                </p>
+
+                <label>
+                    <input type="radio" name="option" id="rock" onclick="userInputFunction();">
+
+                    <img src="rock.png" alt="rock picture" onmouseover="mouseOverFunction();"
+                        onmouseout="mouseOutFunction();">
+
+                </label>
+
+                <label>
+                    <input type="radio" name="option" id="paper" onclick="userInputFunction();">
+
+                    <img src="paper.png" alt="paper picture" onmouseover="mouseOverFunction();"
+                        onmouseout="mouseOutFunction();">
+
+                </label>
+
+                <label>
+                    <input type="radio" name="option" id="scissors" onclick="userInputFunction();">
+
+                    <img src="scissors.png" alt="scissors picture" onmouseover="mouseOverFunction();"
+                        onmouseout="mouseOutFunction();">
+
+                </label>
+
+            </div>
+
+        </section>
+
+        <div id="cursors">
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

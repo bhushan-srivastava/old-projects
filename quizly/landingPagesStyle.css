@@ -1,0 +1,107 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#mySidenav a {
+    position: fixed;
+    /* Position them relative to the browser window */
+    left: -80px;
+
+    /* Position them outside of the screen */
+    margin-top: 200px;
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 120px;
+    /* Set a specific width */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    border-radius: 0 50px 50px 0;
+    /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+
+#homepage {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+
+
+#aboutpage {
+    top: 82px;
+    background-color: #f44336;
+    /* Red */
+}
+#cursors {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 10px;
+  height: 10px;
+  background-color: #111;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: invert(0.9);
+}
+/*custom scrollbar*/
+::-webkit-scrollbar {
+    /*the scrollbar.*/
+    width: 10px;
+    background-color: #111827;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50in;
+    background-color: #4a5568;
+    /* the draggable scrolling handle.*/
+}
+div#test {
+
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255, 255, 255, 0.596);
+
+    margin: 112px auto auto auto;
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(22, 30, 45, 0.9);
+    box-shadow: 0 5px 15px rgba(101, 140, 248, 0.5);
+    border-radius: 20px;
+    z-index: 1;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+/* small-size screen */
+@media screen and (max-width: 1009px)  { 
+  #cursors {
+    display: none;
+  }
+}
+/* small-size screen */
+@media screen and (max-height: 446px) {
+  #cursors {
+    display: none;
+  }
+}

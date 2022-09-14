@@ -1,0 +1,107 @@
+---
+layout: null
+title: All in One Unit Converter
+description: A powerful unit conversion tool.
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% seo %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One Unit Converter</title>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" id="myStyleSheet" href="lightmode.css">
+    <!-- Font by Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+    </style>
+    <!-- Icons by Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <h1 class="title" id="title">
+            All in One Unit Converter
+            <a href="#" onclick="change();" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();"><i
+                    class="fa fa-adjust"></i></a>
+        </h1>
+    </div>
+
+    <div class="main">
+        <fieldset>
+            <legend>
+                What to convert
+            </legend>
+
+            <select id="categories" onchange="displayFromSection()" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">
+                <option value="default" selected disabled hidden id="changeTextForSmallScreen">Choose a measurement
+                    category to convert</option>
+                <option value="Area">Area</option>
+                <option value="Length">Length</option>
+                <option value="Mass">Mass</option>
+                <option value="Speed">Speed</option>
+                <option value="Pressure">Pressure</option>
+                <option value="Temperature">Temperature</option>
+                <option value="Time">Time</option>
+                <option value="Volume">Volume</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset id="from">
+            <legend>
+                From
+            </legend>
+
+            <input id="fromInput" type="number" min="0" placeholder="Enter a value"
+                onkeyup="validity.valid||(value='');displayToSection();" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">
+            <select id="fromSelect" onchange="displayToSection()" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">
+                <option value="default" selected disabled hidden>Choose a unit</option>
+            </select>
+
+        </fieldset>
+
+
+
+        <br>
+        <br>
+
+        <fieldset id="to">
+            <legend>
+                To
+            </legend>
+
+            <select id="toSelect" onchange="displayAnswer()" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">
+                <option value="default" disabled hidden>Choose a unit</option>
+            </select>
+            <p id="answer">
+
+            </p>
+
+        </fieldset>
+
+        <div id="cursors">
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

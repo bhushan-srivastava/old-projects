@@ -1,0 +1,394 @@
+---
+layout: null
+title: Level 4 Quiz - Quizly
+---
+<!DOCTYPE html>
+<html id="html">
+
+
+<head>
+    {% seo %}
+    <!-- UTF-8 encoding:- UTF-8 is the most widely used way to represent Unicode text in web pages -->
+    <meta charset="UTF-8">
+
+    <!-- html elements adapt to different sizes of windows and mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title-->
+    <title>Level 4 Quiz - Quizly</title>
+
+    <!-- link to Tailwind CSS:- External CSS framework for using readymade templates -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- using external font style by google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="quizPagesStyle.css">
+    <!-- Icons by Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- inline css for background color -->
+
+<body style="background-color: rgb(17, 24, 39)">
+
+    <!-- left hand side navigation buttons for scrolling to top and bottom with 1 click -->
+    <div id="mySidenav" class="sidenav">
+        <a href="#q1" id="homepage" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">Top</a>
+        <a href="#about" id="aboutpage" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">Bottom</a>
+
+
+    </div>
+    <!-- readymade header template -->
+    <!-- position sticky so that nav bar does not disappear on scrolling and stays "stuck" at the top of the page -->
+    <!-- class names used by tailwind css for external styling -->
+    <header class="text-gray-400 bg-gray-900 body-font" style="position: sticky; top: 0; z-index: 1;"">
+        <div class=" container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+        style="margin-right: 50px; margin: 0 auto;">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <!-- main logo for homepage -->
+            <span class="ml-3 text-xl"><a class="ml-3 text-xl" href="index.html" onmouseover="mouseOverFunction();"
+                    onmouseout="mouseOutFunction();" style="color: white; font-weight: 500;">Quizly</a></span>
+        </a>
+        <!-- nav bar links -->
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white" href="basichtmllanding.html" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">Beginner HTML</a>
+            <a class="mr-5 hover:text-white" href="advhtmllanding.html" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">Advanced HTML</a>
+            <a class="mr-5 hover:text-white" href="basiccsslanding.html" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">Beginner CSS</a>
+            <a class="mr-5 hover:text-white" href="advcsslanding.html" onmouseover="mouseOverFunction();"
+                onmouseout="mouseOutFunction();">Advanced CSS</a>
+            <a href="#" onclick="change();" onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();"><i
+                    class="fa fa-adjust"></i></a>
+        </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+    <!-- div box for title of quiz -->
+    <div id="title1">
+
+        <p>
+        <h1 style="font-size: xx-large;">
+            Level 4: Advance CSS Quiz
+        </h1>
+        </p>
+    </div>
+
+    <form name="quizForm" onsubmit="return false">
+        <!-- onsubmit="return false" prevents the form for reloading and therefore allows validation 
+        if the user has not answered all questions then they are alerted and allowed to answer the unattempted questions
+        their previous progress is preserved because of return false or else they would have to have to re-attempt the whole quiz if they forgot to answer an question -->
+
+
+
+
+        <!-- div box for question 1 -->
+        <div id="q1">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 1: Which of the following is not a value of the
+                    font-variant property in CSS?</legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq1">normal<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq1">small-caps<br>
+
+                <!-- option 3 -->
+                <input type="radio" id="correctofq1" name="optionsq1">large-caps<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq1">inherit<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 2 -->
+        <div id="q2">
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 2: Which type of CSS is used in the given code?
+                    < p style="border:2px solid red;">
+                </legend>
+
+                <!-- option 1 -->
+                <input type="radio" id="correctofq2" name="optionsq2">Inline CSS<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq2">Internal CSS<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq2">External CSS<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq2">None of the above<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 3 -->
+        <div id="q3">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 3: The CSS property used to set the maximum width of the
+                    element's content box is -
+                </legend>
+
+                <!-- option 1 -->
+                <input type="radio" id="correctofq3" name="optionsq3">max-width property<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq3">height property<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq3">max-height property<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq3">position property<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 4 -->
+        <div id="q4">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 4: The CSS property used to set the indentation of the
+                    first line in a block of text is
+                    - </legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq4">text-overflow property<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq4">text-stroke property<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq4">text-decoration property<br>
+
+                <!-- option 4 -->
+                <input type="radio" id="correctofq4" name="optionsq4">text-indent property<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 5 -->
+        <div id="q5">
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 5: The correct syntax to give a line over text is
+                </legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq5">text-decoration:
+                line-through<br>
+
+                <!-- option 2 -->
+                <input type="radio" id="correctofq5" name="optionsq5">text-decoration: overline<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq5">text-decoration: none<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq5">text-decoration:
+                underline<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 6 -->
+        <div id="q6">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 6: Which of the following is used to specify the subscript
+                    of text using CSS?</legend>
+
+                <!-- option 1 -->
+                <input type="radio" id="correctofq6" name="optionsq6">vertical-align: sub<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq6">vertical-align: super<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq6">vertical-align: subscript<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq6">None of the above<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 7 -->
+        <div id="q7">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 7: The CSS property used to specify whether the text is
+                    written in the horizontal or
+                    vertical direction?</legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq7">word-break<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq7">text-indent<br>
+
+                <!-- option 3 -->
+                <input type="radio" id="correctofq7" name="optionsq7">writing-mode<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq7">None of the above<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 8 -->
+        <div id="q8">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 8: Are the negative values allowed in padding property?
+                </legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq8">Yes<br>
+
+                <!-- option 2 -->
+                <input type="radio" id="correctofq8" name="optionsq8">No<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq8">Can't say<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq8">May be<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 9 -->
+        <div id="q9">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 9: The CSS property used to draw a line around the elements
+                    outside the border?
+                </legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq9">border<br>
+
+                <!-- option 2 -->
+                <input type="radio" id="correctofq9" name="optionsq9">outline-style<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq9">padding<br>
+
+                <!-- option 4 -->
+                <input type="radio" name="optionsq9">line<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for question 10 -->
+        <div id="q10">
+
+
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+                <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+                <legend style="font-size: x-large;">Question 10: Which of the following CSS property is used to specify
+                    whether the table cells
+                    share the common or separate border?</legend>
+
+                <!-- option 1 -->
+                <input type="radio" name="optionsq10">border-radius<br>
+
+                <!-- option 2 -->
+                <input type="radio" name="optionsq10">border-spacing<br>
+
+                <!-- option 3 -->
+                <input type="radio" name="optionsq10">None<br>
+
+                <!-- option 4 -->
+                <input type="radio" id="correctofq10" name="optionsq10">border-collapse<br>
+
+
+            </fieldset>
+        </div>
+        <!-- div box for submit button -->
+        <div id="submitbutton">
+
+
+
+            <!-- empty p tag <p id="result1"></p> used to print result through javascript -->
+            <p id="result1"></p>
+
+            <!-- onclick="calculateScore()" allows validation and helps to preserve user input when they have not answered all questions -->
+            <button type="submit" id="hp" onclick="calculateScore()"
+                style="border-radius: 50in; padding: 2%; margin: 0 auto; background-color: rgb(99, 102, 241); color: white;"
+                onmouseover="mouseOverFunction();" onmouseout="mouseOutFunction();">Submit
+                Quiz</button>
+        </div>
+    </form>
+
+    <!-- readymade footer template -->
+    <!-- class names used by tailwind css for external styling -->
+    <footer class=" text-gray-400 bg-gray-900 body-font" id="about">
+
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Quizly</span>
+            </a>
+
+
+        </div>
+    </footer>
+
+    <div id="cursors">
+    </div>
+
+    <script type="text/javascript" src="calScore.js"></script>
+</body>
+
+</html>

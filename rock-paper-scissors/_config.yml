@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+title: Bhushan Srivastava
+description: Tech aficionado, arts and crafts buff, avid reader.
+logo: favicon.png
